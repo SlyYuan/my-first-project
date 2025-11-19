@@ -1,7 +1,7 @@
 import os
 import json
 import numpy as np
-from text2vec import SentenceModel
+from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import requests
 
@@ -99,5 +99,6 @@ def generate_answer(question: str):
                 "page": chunk["page"]
             })
             seen.add(key)
+
 
     return answer, citations
