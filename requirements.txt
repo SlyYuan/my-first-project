@@ -3,4 +3,3 @@ requests==2.31.0
 numpy==1.26.4
 scikit-learn==1.5.1
 sentence-transformers==3.0.1
-torch==2.3.1
